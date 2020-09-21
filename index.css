@@ -1,0 +1,55 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Raleway:wght@200&display=swap');
+/* Styling for pc */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body { 
+    background: black;
+    text-align: center;
+}
+.heading {
+    margin-top: 17rem;
+    font-size: 800;
+    transition: 2s ease;
+    display: inline-block;
+    font-size: 100px;
+    line-height: 0.9;
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    background: url('https://images.pexels.com/photos/3889856/pexels-photo-3889856.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+.heading:hover{
+        letter-spacing: 10px;
+}
+.quote{
+    font-family: 'Raleway', sans-serif;
+    font-size: 500;
+    color: #eee;
+}
+.down{
+    transform:rotate(90deg);
+    font-family: 'Roboto', sans-serif;
+    color: #eee;
+    cursor: pointer;
+    font-weight: 850;
+    margin-top: 10rem;
+    animation-name: up-down;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    transition: 2s ease-in;
+}
+@keyframes up-down{
+    from{
+        margin-top: 10rem;
+    }
+    to{
+        margin-top: 8rem;
+    }
+}
+/* Responsiveness */
