@@ -5,14 +5,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body { 
     background: black;
     text-align: center;
 }
 .heading {
-    margin-top: 17rem;
-    font-size: 800;
+    margin-top: 10rem;
+    font-size: 1000;
     transition: 2s ease;
     display: inline-block;
     font-size: 100px;
@@ -20,8 +21,9 @@ body {
     padding: 20px;
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
-    background: url('https://images.pexels.com/photos/3889856/pexels-photo-3889856.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background: linear-gradient(96deg,#0fbfae, #0884c2);
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
   }
 .heading:hover{
@@ -38,18 +40,12 @@ body {
     color: #eee;
     cursor: pointer;
     font-weight: 850;
-    margin-top: 10rem;
-    animation-name: up-down;
-    animation-iteration-count: infinite;
-    animation-duration: 2s;
-    transition: 2s ease-in;
+    margin-top: 7.5rem;
+    transition: 0.5s ease;
 }
-@keyframes up-down{
-    from{
-        margin-top: 10rem;
-    }
-    to{
-        margin-top: 8rem;
-    }
+.down:hover{
+    margin-top: 8rem;
 }
-/* Responsiveness */
+
+
+/*  Responsiveness */
