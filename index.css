@@ -52,6 +52,10 @@ body {
     margin-top: 10rem;
 
 }
+.headT{
+  font-family: 'Lobster',cursive;
+  font-size: 60px;
+}
 .flip-card {
     background-color: transparent;
     width: 300px;
