@@ -25,3 +25,12 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+function openSlideMenu(){
+  document.getElementById('menu').style.width = '300px';
+  document.getElementById('content').style.marginLeft = '300px';
+}
+function closeSlideMenu(){
+  document.getElementById('menu').style.width = '0';
+  document.getElementById('content').style.marginLeft = '0';
+}
+}
