@@ -7,12 +7,56 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-body { 
+body {
     background: black;
 }
 .container{
     text-align: center;
+  }
+
+    .nav {
+    	height: 100%;
+    	width: 0;
+    	position: fixed;
+    	z-index: 10;
+    	top: 0;
+    	left: 0;
+    	background-color: #111;
+    	opacity: .9;
+    	overflow-x: hidden;
+    	padding-top: 60px;
+    	transition: 0.7s;
+    }
+    .nav a {
+    	display: block;
+    	padding: 20px 30px;
+    	font-size: 25px;
+    	text-decoration: none;
+    	color: #ccc;
+    }
+    .nav a:hover {
+    	color: white;
+    	transition: 0.4s;
+    }
+    .nav .close {
+    	position: absolute;
+    	top: 0;
+    	right: 22px;
+    	margin-left: 50px;
+    	font-size: 30px
+    }
+
+.slide a {
+	color: white;
+	font-size: 36px;
 }
+#pulkit {
+	padding: 20px;
+  transition: margin-left 0.7s;
+  width: 10%;
+  overflow: hidden;
+}
+
 .heading {
     margin-top: 10rem;
     font-size: 1000;
@@ -50,7 +94,7 @@ body {
 }
 .team{
     margin-top: 10rem;
-  
+
 }
 .headT{
   font-family: 'Lobster',cursive;
@@ -63,7 +107,7 @@ body {
     perspective: 1000px;
   }
   .social,ul{
-    
+
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -78,11 +122,11 @@ body {
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
-  
+
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
-  
+
   .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
@@ -90,12 +134,12 @@ body {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
-  
+
   .flip-card-front {
     background-color: #bbb;
     color: black;
   }
-  
+
   .flip-card-back {
     background-color: #2980b9;
     color: white;
@@ -193,15 +237,16 @@ footer{
     transform: translateX(0px);
   }
 }
-.close{
+.closehoja{
   position: absolute;
   font-size: 30px;
   transform: rotate(45deg);
   cursor: pointer;
   transition: all 0.3s;
 }
-.close:hover{
-  transform: scale(1.4) rotate(-45deg); 
+.closehoja:hover {
+  transform: scale(1.4)
+  rotate(-45deg);
 }
 img{
   width: 120px;
