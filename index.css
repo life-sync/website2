@@ -288,4 +288,30 @@ textarea{
   -webkit-animation: spin 1.5s infinite linear;
           animation: spin 1.5s infinite linear;
 }
+.loader-wrapper .loader:before, .loader-wrapper .loader:after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+}
+.loader-wrapper .loader:before {
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 5px solid transparent;
+  border-top-color:#FFF5D0;
+  -webkit-animation: spin 2s infinite linear;
+          animation: spin 2s infinite linear;
+}
+.loader-wrapper .loader:after {
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border: 10px solid transparent;
+  border-top-color: #FFF5D0;
+  -webkit-animation: spin 1s infinite linear;
+          animation: spin 1s infinite linear;
+}
+
 /*  Responsiveness */
