@@ -333,5 +333,18 @@ textarea{
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
+}.loader-section {
+  position: fixed;
+  top: 0;
+  width: 51%;
+  height: 100%;
+  background: #0F222D;
+  z-index: 1000;
+}
+.loader-section.section-left {
+  left: 0;
+}
+.loader-section.section-right {
+  right: 0;
 }
 /*  Responsiveness */
