@@ -63,6 +63,7 @@ body {
     perspective: 1000px;
   }
   .social,ul{
+    
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -121,11 +122,6 @@ body {
 }
 .social a:hover{
   transform: translate(1.2);
-}
-.team ul li{
-  margin-left: 2.5rem;
-  justify-content: center;
-  align-items: center;
 }
 .team h1{
   text-align: center;
@@ -378,7 +374,6 @@ textarea{
 .content {
   margin: 0 auto;
   padding-bottom: 50px;
-  width: 80%;
-  max-width: 978px;
+  width: 100%;
 }
 /*  Responsiveness */
