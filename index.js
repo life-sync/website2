@@ -8,6 +8,9 @@ signup.addEventListener('click',()=>{
 close.addEventListener('click',()=>{
   modal.style.display='none';
 })
+
+
+
 // Back To top btn
 var mybutton = document.getElementById("myBtn");
 
