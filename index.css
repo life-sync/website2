@@ -7,16 +7,6 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
-
-/* scrollbar */
-::-webkit-scrollbar{
-  width: 8px;
-}
-::-webkit-scrollbar-thumb{
-  background: linear-gradient(#0fbfae, #0884c2);
-  border-radius: 8px;
-}
 body {
     background: black;
 }
@@ -253,8 +243,6 @@ footer{
   cursor: pointer;
   transition: all 0.3s;
 }
-.close:hover{
-  transform: scale(1.4) rotate(-45deg);
 .closehoja:hover {
   transform: scale(1.4)
   rotate(-45deg);
