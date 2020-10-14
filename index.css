@@ -7,7 +7,20 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-body { 
+
+/* scrollbar */
+::-webkit-scrollbar{
+  width: 8px;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(#0fbfae, #0884c2);
+  border-radius: 8px;
+}
+
+
+
+
+body {
     background: black;
 }
 .container{
@@ -50,7 +63,7 @@ body {
 }
 .team{
     margin-top: 10rem;
-  
+
 }
 .headT{
   font-family: 'Lobster',cursive;
@@ -63,7 +76,7 @@ body {
     perspective: 1000px;
   }
   .social,ul{
-    
+
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -78,11 +91,11 @@ body {
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
-  
+
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
-  
+
   .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
@@ -90,12 +103,12 @@ body {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
-  
+
   .flip-card-front {
     background-color: #bbb;
     color: black;
   }
-  
+
   .flip-card-back {
     background-color: #2980b9;
     color: white;
@@ -201,7 +214,7 @@ footer{
   transition: all 0.3s;
 }
 .close:hover{
-  transform: scale(1.4) rotate(-45deg); 
+  transform: scale(1.4) rotate(-45deg);
 }
 img{
   width: 120px;
