@@ -2,10 +2,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <script>
+function openSlideMenu(){
+  document.getElementById('menu').style.width = '250px';
+  document.getElementById('content').style.marginLeft = '250px';
+}
+function closeSlideMenu(){
+  document.getElementById('menu').style.width = '0';
+  document.getElementById('content').style.marginLeft = '0';
+}
+</script>
     <!--Bootstrap and Icons-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
     <link href="index.css" rel="stylesheet" type="text/css">
+
+    <!-- favicons -->
+    <link rel="icon" href="favicon.ico" type="image" sizes="16x16">
+
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,11 +29,28 @@
 </head>
 
 <body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+
+  <div id="navmain">
+
+  <span class="slide">
+    <a href="#" onclick="openSlideMenu()">
+      <i class="fas fa-bars"></i>
+    </a>
+  </span>
+
+  <div id="menu" class="nav">
+    <a href="#" class="close" onclick="closeSlideMenu()">
+      <i class="fas fa-times"></i>
+    </a>
+    <a href="#">Home</a>
+  </div>
+</div>
   <div class="content">
    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
     <div class="loader-wrapper">
     <div class="loader"></div>
-    
+
     <div class="loader-section section-left"></div>
     <div class="loader-section section-right"></div>
     </div>
@@ -32,6 +65,7 @@
             >
         </div>
     </div>
+
     <div class="team">
         <h1><div class="headT"> Who Are We ?</div></h1>
         <br>
@@ -47,10 +81,10 @@
                     <h2>Yuvraaj Narula</h2>
                     <h4 style="font-size: 20px;">Front-End Developer</h4>
                         <ul class="social">
-                            <li><a href="https://www.instagram.com/yuvraaj.13/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="mailto:ynarula678@gmail.com"><i class="fa fa-envelope"></i></a></li>
-                            <li><a href="https://github.com/yuvraajnarula" target="_blank"><i class="fa fa-github"></i></a></li>
-                            <li><a href="https://codepen.io/codeologynerd" target="_blank"><i class="fa fa-codepen"></i></a></li>
+                            <li><a href="https://www.instagram.com/yuvraaj.13/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="mailto:ynarula678@gmail.com"><i class="far fa-envelope"></i></a></li>
+                            <li><a href="https://github.com/yuvraajnarula" target="_blank"><i class="fab fa-github"></i></a></li>
+                            <li><a href="https://codepen.io/codeologynerd" target="_blank"><i class="fab fa-codepen"></i></a></li>
                         </ul>
                 </div>
                 </div>
@@ -68,10 +102,10 @@
                     <h2>Aayan Agarwal</h2>
                     <h4 style="font-size: 20px;"> Back-End Developer </h4>
                     <ul class="social">
-                        <li><a href="https://www.instagram.com/aayan_14.05/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="mailto:aayanagarwal05@gmail.com"><i class="fa fa-envelope"></i></a></li>
-                        <li><a href="https://www.github.com/ion05" target="_blank"><i class="fa fa-github"></i></a></li>
-                        <li><a href="https://twitter.com/14Coderz" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/aayan_14.05/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="mailto:aayanagarwal05@gmail.com"><i class="far fa-envelope"></i></a></li>
+                        <li><a href="https://www.github.com/ion05" target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://twitter.com/14Coderz" target="_blank"><i class="fab fa-twitter"></i></a></li>
                     </ul>
                   </div>
                 </div>
@@ -89,9 +123,9 @@
                     <h2>Gobind Anand</h2>
                     <h4 style="font-size: 20px;"> Ideator </h4>
                     <ul class="social">
-                        <li><a href="https://instagram.com/anand138.singh" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="mailto:gobind13.anand@gmail.com"><i class="fa fa-envelope"></i></a></li>
-                        <li><a href="https://github.com/GobindAnand" target="_blank"><i class="fa fa-github"></i></a></li>
+                        <li><a href="https://instagram.com/anand138.singh" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="mailto:gobind13.anand@gmail.com"><i class="far fa-envelope"></i></a></li>
+                        <li><a href="https://github.com/GobindAnand" target="_blank"><i class="fab fa-github"></i></a></li>
                     </ul>
                   </div>
                 </div>
@@ -107,11 +141,14 @@
                 <div class="flip-card-back">
                   <div class="back-content">
                     <h2>Pulkit Handa</h2>
-                    <h4 style="font-size: 20px;">Developer </h4>
+
+                    <h4 style="font-size: 20px;">Front End Developer </h4>
                     <ul class="social">
-                        <li><a href="https://www.instagram.com/pulkit_2005/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="mailto:pulkit.handa2005@gmail.com"><i class="fa fa-envelope"></i></a></li>
-                        <li><a href="https://github.com/Pulkitchamp"><i class="fa fa-github"></i></a></li>
+                        <li><a href="https://www.instagram.com/pulkit_2005/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="mailto:pulkit.handa2005@gmail.com"><i class="far fa-envelope"></i></a></li>
+                        <li><a href="https://github.com/Pulkitchamp"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://codepen.io/pulkitchamp" target="_blank"><i class="fab fa-codepen"></i></a></li>
+
                     </ul>
                   </div>
                 </div>
@@ -119,6 +156,11 @@
             </div>
               </li>
             </ul>
+ </body>
+<!--JS-->
+<br>
+<br>
+<br>
           </div>
           </div>
             </div>
@@ -129,7 +171,7 @@
               <div class="form-modal">
                 <div class="modal-content">
                   <div class="content-wrapper">
-                    <div class="close">+</div>
+                    <div class="closehoja">+</div>
                       <img src="https://banner2.cleanpng.com/20180516/zq/kisspng-computer-icons-google-account-icon-design-login-5afc02dab4a218.0950785215264652427399.jpg">
                       <form id='formElem'>
                         <input type="text" placeholder="Name">
