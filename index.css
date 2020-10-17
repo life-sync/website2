@@ -37,6 +37,10 @@ body {
     	color: #0fbfae;
     	transition: 0.4s;
     }
+    .nav ul li{
+      list-style-type: none;
+      display: block;
+    }
     .nav .nav-close {
     	position: absolute;
     	top: 0;
@@ -105,8 +109,7 @@ body {
     height: 300px;
     perspective: 1000px;
   }
-  .social,ul{
-
+  .team ul{
     list-style: none;
     display: flex;
     justify-content: space-around;
