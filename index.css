@@ -37,7 +37,7 @@ body {
     	color: white;
     	transition: 0.4s;
     }
-    .nav .close {
+    .nav .nav-close {
     	position: absolute;
     	top: 0;
     	right: 22px;
@@ -236,14 +236,14 @@ footer{
     transform: translateX(0px);
   }
 }
-.closehoja{
+.close{
   position: absolute;
   font-size: 30px;
   transform: rotate(45deg);
   cursor: pointer;
   transition: all 0.3s;
 }
-.closehoja:hover {
+.close:hover {
   transform: scale(1.4)
   rotate(-45deg);
 }

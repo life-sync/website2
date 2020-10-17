@@ -25,9 +25,11 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+//pre loader
 setTimeout(function(){
   $('body').addClass('loaded');
 }, 5000);
+// navbar
 function openSlideMenu(){
   document.getElementById('menu').style.width = '250px';
   document.getElementById('content').style.marginLeft = '250px';
@@ -36,3 +38,4 @@ function closeSlideMenu(){
   document.getElementById('menu').style.width = '0';
   document.getElementById('content').style.marginLeft = '0';
 }
+//aos
