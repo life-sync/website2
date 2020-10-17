@@ -28,10 +28,12 @@ body {
     }
     .nav a {
     	display: block;
-    	padding: 20px 30px;
     	font-size: 25px;
     	text-decoration: none;
     	color: #ccc;
+    }
+    .nav .active{
+      padding: 20px 30px;
     }
     .nav a:hover {
     	color: white;
