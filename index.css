@@ -28,13 +28,13 @@ body {
     }
     .nav a {
     	display: block;
-    	padding: 20px 30px;
-    	font-size: 25px;
+      font-size: 25px;
+      padding: 10px;
     	text-decoration: none;
     	color: #ccc;
     }
     .nav a:hover {
-    	color: white;
+    	color: #0fbfae;
     	transition: 0.4s;
     }
     .nav .nav-close {
@@ -43,6 +43,10 @@ body {
     	right: 22px;
     	margin-left: 50px;
     	font-size: 30px
+    }
+ .nav ul li{
+      list-style-type: none;
+      display: block;
     }
 
 .slide a {
@@ -105,8 +109,7 @@ body {
     height: 300px;
     perspective: 1000px;
   }
-  .social,ul{
-
+  .team ul{
     list-style: none;
     display: flex;
     justify-content: space-around;
