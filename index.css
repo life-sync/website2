@@ -48,6 +48,10 @@ body {
     	margin-left: 50px;
     	font-size: 30px
     }
+ .nav ul li{
+      list-style-type: none;
+      display: block;
+    }
 
 .slide a {
 	color: white;
