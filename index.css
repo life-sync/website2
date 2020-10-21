@@ -1,6 +1,5 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Raleway:wght@200&display=swap');
-/* Styling for pc */
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +8,17 @@
 }
 body {
     background: #0F222D;
-}  .nav {
+}
+/*colors*/
+:root{
+  --color-1: #000000;
+  --color-2: #14213D;
+  --color-3: #FCA311;
+  --color-4: #E5E5E5;
+  --color-5: #fff;
+}
+/*Navbar*/
+.nav {
     	height: 100%;
     	width: 0;
     	position: fixed;
@@ -58,6 +67,7 @@ body {
   width: 10%;
   overflow: hidden;
 }
+/*Loader*/
 .loader-wrapper {
   position: fixed;
   top: 0;
@@ -173,4 +183,6 @@ body {
   background: linear-gradient(#0fbfae, #0884c2);
   border-radius: 8px;
 }
+/*content*/
+
 /*  Responsiveness */
