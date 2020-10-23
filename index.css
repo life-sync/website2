@@ -147,5 +147,58 @@ body {
   background: linear-gradient(#0fbfae, #0884c2);
   border-radius: 8px;
 }
-
+.nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.7s;
+}
+.nav a {
+  display: block;
+  padding: 10px 15px;
+  font-size: 25px;
+  text-decoration: none;
+  color: var(--color-5);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+}
+.nav a:hover {
+  transition: 0.2s;
+}
+.nav .nav-close {
+  position: absolute;
+  top: 0;
+  right: 22px;
+  margin-left: 50px;
+  font-size: 30px;
+  transform: rotate(90deg);
+  color: white;
+}
+.fa-times{
+color: white;
+}
+.slide a {
+  color: white;
+  font-size: 36px;
+}
+#nav {
+  transition: margin-left 0.7s;
+  overflow: hidden;
+  width: 10%;
+  float: right;
+  position: fixed;
+  padding: 20px;
+}
+#nav ul{
+  margin-top: 12.5rem;
+  margin-left: 40%;
+  list-style-type: none;
+  display: block;
+}
 /*  Responsiveness */
