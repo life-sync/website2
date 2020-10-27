@@ -51,15 +51,15 @@ body {
   cursor: pointer;
   outline: none;
   background: transparent;
-  border: 1px solid #111;
-  color: #111;
+  border: 1px solid var(--color-1);
+  color: var(--color-1);
   font-size: 15px;
   transition: all 0.3s;
   border-radius: 0px;
   font-weight: 900;
 }
 .btn:hover{
-  background: #111;
+  background: var(--color-1);
   color: #eee;
   transform: translateY(-8px);
 }
@@ -170,6 +170,42 @@ body {
 }
 .nav a:hover {
   transition: 0.2s;
+}
+.nav ul li a {
+  text-decoration: none;  
+  color: var(--color-5);
+  font-weight: bold;
+  position: relative; 
+  margin-bottom: 1rem;
+}
+.nav ul li a:hover{
+  transition: all 0.3s ease-out;
+  transition-delay: 0.3s;
+  color: var(--color-3);
+}
+.nav ul li a::before{
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: var(--color-3);
+}
+.nav ul li a:hover::before{
+  animation: scannerAnimation 0.7s cubic-bezier(.35,-0.7,.56,1) forwards;
+}
+@keyframes scannerAnimation {
+  0% {
+    bottom: -3px;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    bottom: 100%;
+    opacity: 0;
+  }
 }
 .nav .nav-close {
   position: absolute;
