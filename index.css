@@ -31,7 +31,7 @@ body {
 .table-img{
   background-size: cover;
   height: 100vh;
-  margin-left: 15px;
+  margin-left: auto;
 }
 .table-content{
   margin-left: 15px;
@@ -151,10 +151,10 @@ body {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 10;
+  z-index: 1000;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #000;
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.7s;
@@ -236,5 +236,27 @@ color: white;
   margin-left: 40%;
   list-style-type: none;
   display: block;
+}
+.head{
+  height: 100vh;
+  background-color: black;
+}
+.head h1{
+  color: var(--color-5);
+  top: 40%;
+  text-align: center;
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+  font-size: 7.5rem;
+}
+.head p{
+  margin-top: 1.5rem;
+  color: var(--color-4);
+  top: 40%;
+  position: relative;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
 }
 /*  Responsiveness */
