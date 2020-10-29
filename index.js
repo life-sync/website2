@@ -60,3 +60,4 @@ var text = "Learn~Observe~Create";
 var writer = new Writer("#text", text, false);
 writer.start();
 //btn ripple
+//loader

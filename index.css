@@ -260,4 +260,34 @@ color: white;
   margin-left: 40%;
   text-align: center;
 }
+.head button{
+    display: block;
+    margin: 0 auto;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Roboto';
+    font-size: 1.8rem;
+    padding: 22px 40px;
+    box-shadow: 0 0 12px 2px rgba(0,0,0,.1);
+    border-radius: 3px;
+    transition: color 0.5s;
+  }
+.head button:focus {
+    outline: 0;
+}
+.aim,.team{
+  height: 100vh;
+}
+.aim{
+  background-color: var(--color-4);
+}
+.team{
+  background-color: var(--color-5);
+}
+.social{
+  height: 25vh;
+  background-color: var(--color-3);
+}
 /*  Responsiveness */
