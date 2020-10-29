@@ -60,18 +60,3 @@ var text = "Learn~Observe~Create";
 var writer = new Writer("#text", text, false);
 writer.start();
 //btn ripple
-$('.hero-down').mousedown(function() {
-  TweenMax.fromTo('.btn-react', 0.25, {
-    opacity: 0,
-    scale: 0
-  }, {
-    opacity: 0.25,
-    scale: 1,
-    onComplete: function() {
-      TweenMax.to('.btn-react', 0.25, {
-        opacity: 0,
-        scale: 0
-      });
-    }
-  });
-});
