@@ -11,10 +11,9 @@
 /*colors*/
 :root{
   --color-1: #0F222D;
-  --color-2: ;
+  --color-2: #d5d9de;
   --color-3: #FCA311;
   --color-4: #e8e5d3;
-  --color-5: #fff;
 }
 /*content*/
 .sample{
@@ -31,8 +30,16 @@
 }
 .wave-svg svg path{
   stroke: none;
-  fill: var(--color-4);
+  fill: var(--color-2);
   width: 100%;
+}
+.line{
+  background:var(--color-4);
+  height: 8px;
+  border-radius: 4px;
+  width: 0%;
+  position: fixed;
+  top: 0;
 }
 /*scrollbar*/
 ::-webkit-scrollbar{
