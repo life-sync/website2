@@ -71,7 +71,7 @@
 .heading .sub{
   padding-left: 2rem;
   letter-spacing: 5px;
-  color: var(--color-2);
+  color:#eee;
 }
 /*scrollbar*/
 ::-webkit-scrollbar{
