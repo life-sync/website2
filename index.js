@@ -61,3 +61,25 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+//counter
+/*let counter_run = function(selector){
+  $(selector).each(function(){
+    $(this).animate({
+      counter: $(this).text()
+    },{
+      duration: 4000,
+      easing: 'swing',
+      step: function(value){
+        $(this).text(Math.ceil(value));
+      }
+    });
+  });
+}
+let a = 0;
+$(window).scroll(function(){
+  let scroll_top = $('.number').offset().top - window.innerHeight;
+  if(a == 0 && $(window).scrollTop() >= scroll_top) {
+    a++;
+    counter_run('.rect h1');
+  }
+});*/

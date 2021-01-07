@@ -40,13 +40,22 @@
   margin-left: 40px;
   margin-bottom: 10px;
 }
-.card h1{
+.card span{
   font-weight: lighter;
-  font-size: 20px;
   margin-top: 10px;
   padding: 10px;
   border-top: 2px solid #333;
   border-bottom: 2px solid #333;
+  border-radius: 10px;
+}
+.card span h1 {
+  color: var(--color-4);
+  font-size: 20px;
+}
+.card span p{
+  margin-top: 10px;
+  margin-bottom: -5px;
+  color: var(--color-2);
 }
 .media{
   padding: 30px 0;
@@ -56,6 +65,7 @@
   align-items: center;
   border-top: 2px solid #333;
   border-bottom: 2px solid #333;
+  border-radius: 10px;
 }
 .media-list:not(:last-child){
   margin-right: 10px;
@@ -135,6 +145,9 @@
 .about,.members{
   width: 100%;
 } 
+.members{
+  padding-top: 5rem;
+}
 .about{
   margin-top: 10rem;
   height: 100vh;
@@ -162,4 +175,35 @@
   list-style: none;
   align-items: center;
   justify-content: center;
+}
+.task{
+  height:45vh;
+  width: 100%;
+}
+ .rect{
+  position: relative;
+  z-index: 1;
+  background: var(--color-3);
+  width: 17rem;
+  height: 10rem;
+  padding-top: 3.5vmin;
+  border-radius: 0.5rem;  
+  box-shadow: 0 30px 90px rgba(57,56,61,0.205);
+  margin-left: 15px;
+}
+.rect:first-child{
+  margin-left: 15%;
+}
+.number{
+  margin-top: -15vmin;
+  display: flex;
+}
+.number .rect h1{
+  font-size: 5rem;
+  color: var(--color-2);
+  font-weight: 600;
+  background: var(--color-3);
+}
+.number .rect p{
+  color: var(--color-2);
 }
