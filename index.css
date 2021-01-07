@@ -207,3 +207,7 @@
 .number .rect p{
   color: var(--color-2);
 }
+.contact ul {
+  display: flex;
+  list-style: none;
+}
