@@ -83,3 +83,4 @@ $(window).scroll(function(){
     counter_run('.rect h1');
   }
 });*/
+//loader
