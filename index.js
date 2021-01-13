@@ -93,5 +93,5 @@ window.addEventListener("load", function() {
   preload.className += " fade";
   setTimeout(function() {
     preload.style.display = "none";
-  }, 40000);
+  }, 5000);
 });
