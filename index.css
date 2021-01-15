@@ -145,9 +145,7 @@
 .about,.members{
   width: 100%;
 } 
-.members{
-  padding-top: 5rem;
-}
+
 .about{
   margin-top: 10rem;
   height: 50vh;
@@ -177,7 +175,7 @@
   justify-content: center;
 }
 .task{
-  height:45vh;
+  height:100vh;
   width: 100%;
 }
  .rect{
@@ -227,10 +225,8 @@
   padding-left: 10rem;
   width: 100%;
 }
-.about ul li:nth-child(2){
-  padding-left: 5rem;
-}
-.about ul img{
+
+.about .logo-img{
   width: 300px;
   height: 200px;
   flex-direction: column;
@@ -239,28 +235,31 @@
   position: relative;
   transition: all .4s;
 }
-.about ul img::after,
-.about ul img::before{
+.about .logo-img::after,
+.about .logo-img::before{
   content: '';
   position: absolute;
   background: #30475e;
 }
-.about ul img::before{
+.about .logo-img::before{
   top: -20px;
   left: -10px;
   width: 100%;
   height: 20px;
   transform: rotate(0) skewX(45deg);
 }
-.about ul img::after{
+.about .logo-img::after{
   top: -10px;
   left: -20px;
   width: 20px;
   height: 100%;
   transform: rotate(0) skewY(45deg);
 }
-.about ul img:hover{
+.about .logo-img:hover{
   transform: rotate(-4deg) skewY(-10deg) translateX(10px);
+}
+.about ul li:nth-child(2){
+  padding-left:5rem ;
 }
 .preloader {
   height: 100%;
@@ -396,4 +395,37 @@
 .preloader.fade {
   transition: 2.5s;
   opacity: 0;
+}
+.middle{
+  position: absolute;
+  margin-top: 15rem;
+  width: 100%;
+  background: var(--color-3);
+}
+.counting-sec{
+  padding: 40px 0;
+  width: 100%;
+}
+.inner-width{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+}
+.col{
+  flex: 1fr;
+  text-align: center;
+  padding: 20px;
+  color: #eee;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.col .icon{
+  font-size: 30px;
+  color: var(--color-4);
+}
+.col .num{
+  margin: 20px auto;
 }

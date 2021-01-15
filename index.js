@@ -62,27 +62,11 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 //counter
-/*let counter_run = function(selector){
-  $(selector).each(function(){
-    $(this).animate({
-      counter: $(this).text()
-    },{
-      duration: 4000,
-      easing: 'swing',
-      step: function(value){
-        $(this).text(Math.ceil(value));
-      }
-    });
-  });
+$(".num").counterUp({
+  delay:10,
+  time:1000
 }
-let a = 0;
-$(window).scroll(function(){
-  let scroll_top = $('.number').offset().top - window.innerHeight;
-  if(a == 0 && $(window).scrollTop() >= scroll_top) {
-    a++;
-    counter_run('.rect h1');
-  }
-});*/
+  );
 //loader
 var preload = document.createElement("div");
 preload.className = "preloader";
