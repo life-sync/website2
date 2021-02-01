@@ -1,27 +1,12 @@
-//modal
-const signup = document.querySelector('.signup');
-const modal = document.querySelector('.form-modal');
-const close = document.querySelector('.close');
-signup.addEventListener('click',()=>{
-  modal.style.display='flex';
-})
-close.addEventListener('click',()=>{
-  modal.style.display='none';
-})
-//nav
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+//scroll indicator
+window.addEventListener('scroll', moveScrollIndicator);
+const scrollIndicatorElt = document.getElementById('scrollIndicator');
+const maxHeight = window.document.body.scrollHeight - window.innerHeight;
+function moveScrollIndicator(e){
+  const percentage = ((window.scrollY) / maxHeight) * 100;
+  scrollIndicatorElt.style.width = percentage + '%';
 }
-function openSlideMenu(){
-  document.getElementById('menu').style.width = '250px';
-  document.getElementById('content').style.marginLeft = '20px';
-}
-function closeSlideMenu(){
-  document.getElementById('menu').style.width = '0';
-  document.getElementById('content').style.marginLeft = '0';
-}
-//typing
+//typewriter effect
 var Writer = function(selector, text, infinite) {
   this.config = {
     selector: selector,
@@ -59,8 +44,6 @@ var Writer = function(selector, text, infinite) {
 var text = "Learn~Observe~Create";
 var writer = new Writer("#text", text, false);
 writer.start();
-//btn ripple
-//loader
 //back-to-top 
 var mybutton = document.getElementById("myBtn");
 
@@ -78,8 +61,21 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
-
-
-// aos
-
+//counter
+$(".num").counterUp({
+  delay:10,
+  time:1000
+}
+  );
+//loader
+var preload = document.createElement("div");
+preload.className = "preloader";
+preload.innerHTML =
+  '<p class="hello"></p><div id="preloader"><div id="loader"></div></div>';
+document.body.appendChild(preload);
+window.addEventListener("load", function() {
+  preload.className += " fade";
+  setTimeout(function() {
+    preload.style.display = "none";
+  }, 5000);
+});

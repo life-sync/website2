@@ -1,13 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-    <!--Bootstrap and Icons-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--Styling-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="index.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- favicons -->
     <link rel="icon" href="favicon.ico" type="image" sizes="16x16">
     <meta charset="UTF-8">
@@ -15,85 +12,182 @@
     <title>Life-Sync</title>
 </head>
 <body>
-  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
-  <div class="home ">
-    <div id="nav">
-      <span class="slide">
-        <a href="#" onclick="openSlideMenu()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </span>
-      <div id="menu" class="nav">
-        <a href="#" class="nav-close" onclick="closeSlideMenu()">
-          <i class="fa fa-times"></i>
-        </a>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Team</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-sort-up"></i></button>
+  <div class="line" id="scrollIndicator">
+  </div>
+  <section class="wave-svg">
+    <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
+      <path d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z"></path>
+    </svg>
+    <div class="heading">
+      <h1 class="title">LifeSync</h1>
+      <h3 class="sub" id="text"></h3>
+    </div>
+  </section>
+  <div class="about">
+    <center>
+      <h1 id="about">About Us</h1>
+    </center>
+    <ul>
+      <li>
+        <p>
+          LifeSync has been made with a single aim: working to provide 
+          the best services to the people to make their lives much easier.
+          Our main motive is to utilize the power of technology in way that
+          the users love it. We love to develop software as it gives us a 
+          feeling of contributing to the society.<br><br>
+          All of the LifeSync team knew each other since middle school and 
+          we hope to help more people the same way.
+        </p>
+      </li>
+      <li>
+        <div>
+          <img class="logo-img"src="https://media.discordapp.net/attachments/741244174736556076/768894278516473917/unknown.png" alt="LifeSync-logo">
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="task">
+    <div class="middle">
+      <div class="counting-sec">
+        <div class="inner-width">
+          <div class="col">
+            <i class="icon fa fa-motorcycle"></i>
+            <div class="num">555</div>
+            Lorem
+          </div>
+          <div class="col">
+            <i class="icon fa fa-heart"></i>
+            <div class="num">666</div>
+            Lorem
+          </div>
+          <div class="col">
+            <i class="icon fa fa-car"></i>
+            <div class="num">777</div>
+            Lorem
+          </div>
+          <div class="col">
+            <i class="icon fa fa-android"></i>
+            <div class="num">888</div>
+            Lorem
+          </div>
+        </div>
       </div>
     </div>
-    <div class="head">
-      <h1>LifeSync</h1><br>
-      <p id="text"></p><br>
-      <button class="ripple"><i class="fa fa-chevron-down"></i></button>
-
+  </div>
+  <div class="members">
+    <center>
+      <h1 id="team">Meet The Crew</h1>
+    </center> 
+    <br>
+    <section class="team">
+      <div class="card">
+        <img src="https://avatars0.githubusercontent.com/u/49789627?s=460&u=33bceea03dce0d02d2dd7d87b3ce0cac5ce1c42d&v=4" alt="Aayan Agarwal">
+        <span>
+          <h1>Aayan Agarwal</h1>
+          <p>Lorem</p>
+        </span>
+        <div class="media">
+          <div class="media-list">
+            <i class="fa fa-instagram"></i>
+          </div>
+          <div class="media-list">
+            <i class="fa fa-envelope"></i>
+          </div>
+          <div class="media-list">
+            <i class="fa fa-github"></i>
+          </div>
+          <div class="media-list">
+            <i class="fa fa-twitter"></i>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://avatars2.githubusercontent.com/u/49155095?s=460&u=95450d2306b70633736fbcadbbab20e8aa31e806&v=4" alt="Yuvraaj Narula">
+        <span>
+          <h1>Yuvraaj Narula</h1>
+          <p>Lorem</p>
+        </span>
+        <div class="media">
+          <div class="media-list">
+            <i class="fa fa-instagram"></i>
+          </div>
+          <div class="media-list">
+            <i class="fa fa-envelope"></i>
+          </div>
+          <div class="media-list">
+            <i class="fa fa-github"></i>
+          </div>
+          <div class="media-list">
+            <i class="fa fa-codepen"></i>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://avatars0.githubusercontent.com/u/64609354?s=460&u=08b4be23f971838d95fbe5877aec64708486eb32&v=4" alt="Pulkit Handa">
+        <span>
+          <h1>Pulkit Handa</h1>
+          <p>Lorem</p>
+        </span>
+          <div class="media">
+          <div class="media-list">
+            <i class="fa fa-instagram"></i>
+          </div>
+          <div class="media-list">
+            <i class="fa fa-envelope"></i>
+          </div>
+          <div class="media-list">
+            <i class="fa fa-github"></i>
+          </div>
+          <div class="media-list">
+            <i class="fa fa-codepen"></i>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://avatars2.githubusercontent.com/u/67106625?s=460&u=d5fcadc2a8532bc1fb280969fd58e528e351ceb4&v=4" alt="Gobind Anand">
+        <span>
+          <h1>Gobind Anand</h1>
+          <p>Lorem</p>
+        </span>
+        <div class="media">
+          <div class="media-list">
+            <i class="fa fa-instagram"></i>
+          </div>
+          <div class="media-list">
+            <i class="fa fa-envelope"></i>
+          </div>
+          <div class="media-list">
+            <i class="fa fa-github"></i>
+          </div>
+          <div class="media-list">
+            <i class="fa fa-twitter"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section class="footer">
+    <br>
+    <center>
+    <hr>
+    <br>
+    <div class="contact">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#task">Task</a></li>
+          <li><a href=""><i class="fa fa-envelope"></i></a></li>
+          <li><a href=""><i class="fa fa-github"></i></a></li>
+        </ul>
     </div>
-    <table>
-      <tr>
-        <td class="table-img">
-          <img src="https://media.discordapp.net/attachments/741244174736556076/768894278516473917/unknown.png">
-        </td>
-        <td class="table-content">
-          <div class="table-content">
-            <div class="about-us">
-            <h1>About Us</h1>
-            <br>
-            <p>
-              LifeSync has been made with a single aim: working to provide the best services<br>
-               to the people to make their lives much easier. Our main motive is to utilize <br>
-               the power of technology in way that the users love it. We love to develop
-                software as it gives us a feeling of contributing to the society. <br>
-               <br>
-               All of the LifeSync team knew each other since middle school and we hope to <br>
-               help more people the same way.
-            </p>
-            <br>
-  
-            <button class="signup btn">Contact Us</button>
-          </div>
-            <div class="form-modal">
-              <div class="modal-content">
-                <div class="content-wrapper">
-                  <div class="close">+</div>
-                  <img src="https://banner2.cleanpng.com/20180516/zq/kisspng-computer-icons-google-account-icon-design-login-5afc02dab4a218.0950785215264652427399.jpg">
-                  <form>
-                    <input type="text" placeholder="Name">
-                    <input type="email" placeholder="Email">
-                    <textarea class="message" placeholder="Message"></textarea>
-                    <button class="btn submit">Submit</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </td>
-      </tr>
-    </table>
-  </div>
-  <div class="aim"></div>
-  <div class="team"></div>
-  <div class="social"></div>
-  </div>
- </body>
+    </center>
+  </section>
+</body>
 
 <!-- js -->
 <script src="index.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
 </html>
